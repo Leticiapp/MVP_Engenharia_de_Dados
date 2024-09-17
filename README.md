@@ -104,7 +104,7 @@ Os resultados da análise de dados são apresentados em um relatório detalhado,
 ### Conclusões
 O projeto demonstra a importância da análise de dados no mercado financeiro e como ferramentas modernas de computação em nuvem podem ser utilizadas para extrair insights relevantes. A utilização do Azure Databricks, Data Factory e Azure SQL Database permitiu a criação de um pipeline de dados eficiente para análise de grandes volumes de dados. A combinação do Spark com Python se mostrou poderosa para processar, analisar e visualizar os dados de forma eficaz.
 
-## Próximos Passos
+### Próximos Passos
 Para trabalhos futuros, algumas sugestões são:
 * Integrar dados mais recentes de cotações, incluindo os anos de 2023 e 2024.
 * Incluir informações adicionais sobre as empresas de tecnologia, como indicadores financeiros, para aprofundar a análise.
