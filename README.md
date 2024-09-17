@@ -1,9 +1,9 @@
-# MVP de Engenharia de Dados
+## MVP de Engenharia de Dados
 
-## Descrição
+### Descrição
 Este projeto analisa dados de cotações do mercado financeiro de grandes empresas de tecnologia usando Spark e Python. O objetivo é extrair insights sobre o desempenho dessas empresas ao longo do tempo, com foco especial nos últimos anos, incluindo o período da pandemia de Covid-19.
 
-## Objetivo
+### Objetivo
 O projeto busca responder às seguintes perguntas de negócio:
 
 * Quais os valores mínimos e máximos das cotações das empresas nos últimos anos?
@@ -12,7 +12,7 @@ O projeto busca responder às seguintes perguntas de negócio:
 * Qual o volume médio de transações das empresas com maior e menor crescimento em 10 anos?
 * Quais empresas são mais novas no mercado e suas cotações médias no último ano?
 
-## Ferramentas e Tecnologias
+### Ferramentas e Tecnologias
 O projeto utiliza uma gama de ferramentas modernas de análise de dados e computação em nuvem:
 
 * **Microsoft Azure:**
@@ -26,7 +26,7 @@ O projeto utiliza uma gama de ferramentas modernas de análise de dados e comput
     * **Matplotlib:** biblioteca para criação de gráficos e visualizações estáticas, interativas e animadas em Python.
     * **Seaborn:** biblioteca para criação de visualizações estatísticas atraentes e informativas.
 
-## Conjunto de Dados
+### Conjunto de Dados
 Os dados utilizados foram obtidos do Kaggle, uma plataforma que disponibiliza conjuntos de dados para projetos de ciência de dados. O conjunto de dados escolhido contém informações sobre os preços diários de ações e volumes de 14 empresas de tecnologia, abrangendo o período de janeiro de 2010 a janeiro de 2023.
 
 As empresas incluídas na análise são:
@@ -46,7 +46,7 @@ As empresas incluídas na análise são:
 * Oracle 
 * NVIDIA
 
-## Modelagem de Dados
+### Modelagem de Dados
 Para garantir a organização e estrutura dos dados, foi utilizado o **Modelo Estrela**, um modelo de dados multidimensional amplamente utilizado em Data Warehouses.
 
 * **Tabela Fato:** `stock_prices` - Contém dados sobre as cotações das empresas, incluindo:
@@ -68,7 +68,7 @@ Para garantir a organização e estrutura dos dados, foi utilizado o **Modelo Es
         * Mês
         * Data completa
 
-## Pipeline ETL
+### Pipeline ETL
 Para automatizar a ingestão, transformação e carregamento dos dados no Azure SQL Database, foi criado um pipeline ETL utilizando o Azure Data Factory.
 
 **Etapas do Pipeline:**
@@ -80,7 +80,7 @@ Para automatizar a ingestão, transformação e carregamento dos dados no Azure 
     * Criação de campos adicionais na tabela `dates`, como "mês", "ano" e "data completa" a partir do campo "ID da data". 
 3. **Carga:** Os dados transformados são carregados no Azure SQL Database, nas tabelas `stock_prices`, `companies` e `dates`.
 
-## Análise de Dados
+### Análise de Dados
 A análise de dados foi realizada no Databricks, utilizando o Spark para processamento de big data e Python para análise exploratória e visualização de dados.
 
 **Etapas da Análise:**
@@ -98,10 +98,10 @@ A análise de dados foi realizada no Databricks, utilizando o Spark para process
     * **Pergunta 4:** O volume médio mensal de transações das empresas com maior (Netflix e NVIDIA) e menor (Oracle e IBM) crescimento em 10 anos foi calculado e visualizado em um gráfico de linhas, mostrando a evolução do volume de transações ao longo do tempo.
     * **Pergunta 5:** O desempenho diário das empresas mais novas no mercado (Meta e Tesla) foi analisado em 2022, com foco no valor médio das cotações. Os resultados foram visualizados em um gráfico de linhas, permitindo observar as oscilações no preço das ações ao longo do ano.
 
-## Resultados
+### Resultados
 Os resultados da análise de dados são apresentados em um relatório detalhado, incluindo gráficos e tabelas. O relatório fornece insights valiosos sobre o desempenho das empresas de tecnologia no mercado financeiro, especialmente nos últimos anos.
 
-## Conclusões
+### Conclusões
 O projeto demonstra a importância da análise de dados no mercado financeiro e como ferramentas modernas de computação em nuvem podem ser utilizadas para extrair insights relevantes. A utilização do Azure Databricks, Data Factory e Azure SQL Database permitiu a criação de um pipeline de dados eficiente para análise de grandes volumes de dados. A combinação do Spark com Python se mostrou poderosa para processar, analisar e visualizar os dados de forma eficaz.
 
 ## Próximos Passos
